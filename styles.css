@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -15,10 +16,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 80%;
+    max-width: 800px;
 }
 
 h1 {
     margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    margin-top: 30px;
     color: #333;
 }
 
@@ -40,4 +48,14 @@ h1 {
 
 .link-list a:hover {
     color: #104e8b;
+}
+
+.pdf-container {
+    margin-top: 20px;
+    border-top: 2px solid #f4f4f4;
+    padding-top: 20px;
+}
+
+.hidden {
+    display: none;
 }

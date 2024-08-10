@@ -10,11 +10,21 @@
     <div class="container">
         <h1>Important Links</h1>
         <ul class="link-list">
+            <li><a href="#" onclick="showPDF('bls-pdf')">View BLS PDF</a></li>
+            <li><a href="#" onclick="showPDF('sapd-handbook-pdf')">View SAPD Handbook PDF</a></li>
             <li><a href="https://faldi767.github.io/sapdpenal/" target="_blank">SAPD Penal Codes</a></li>
             <li><a href="https://meilyan.github.io/sapd10code/" target="_blank">SAPD 10 Codes</a></li>
-            <li><a href="sapd-handbook.html" target="_blank">Handbook</a></li>
-            <li><a href="bls.html" target="_blank">BLS</a></li>
         </ul>
+        <div id="bls-pdf" class="pdf-container hidden">
+            <h2>BLS PDF Viewer</h2>
+            <iframe src="bls.pdf" width="100%" height="500px"></iframe>
+        </div>
+        <div id="sapd-handbook-pdf" class="pdf-container hidden">
+            <h2>SAPD Handbook PDF Viewer</h2>
+            <iframe src="sapd-handbook.pdf" width="100%" height="500px"></iframe>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
